@@ -1,1 +1,2 @@
-# tcp_ip_sockets
+# TCP IP Sockets
+Learing client/server socket programming.
