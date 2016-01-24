@@ -23,6 +23,9 @@ int main(int argc, char *argv[]) {
    struct addrinfo *addrList; 
 
    // Modify servAddr contents to reference linked list of addresses
+   //    getaddrinfo() retirms 0 if successful
+   //       inputs:  host, port, constraints
+   //       outputs: address list
    int rtnVal = getaddrinfo(addrString, portString, &addrCriteria, &addrList);
    if(rtnVal != 0) {
       DieWithUserMessage("getaddrinfo() failed", gai_strerror(rtnVal));

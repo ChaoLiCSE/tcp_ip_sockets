@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
-#include <arpa/inet.h>
+#include <arpa/inet.h>  // For sockaddr_in and inet_addr() 
 
 void PrintSocketAddress(const struct sockaddr *address, FILE *stream) {
    
